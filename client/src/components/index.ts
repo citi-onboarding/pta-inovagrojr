@@ -1,3 +1,3 @@
-import { BlueButton } from './Button';
+import CardOccupationArea from "./cardOccupationArea";
 
-export { BlueButton };
+export { CardOccupationArea };
