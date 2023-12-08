@@ -1,4 +1,6 @@
-import CardOccupationArea from "./cardOccupationArea";
 import Clients from "./card-serviços";
+import Cards from "./cards";
+import CardOccupationArea from "./cardOccupationArea";
 
-export { CardOccupationArea, Clients};
+export { Clients, Cards, CardOccupationArea };
+
