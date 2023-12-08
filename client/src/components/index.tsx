@@ -1,3 +1,4 @@
+import CardOccupationArea from "./cardOccupationArea";
 import Clients from "./card-serviços";
 
-export { Clients };
+export { CardOccupationArea, Clients};
