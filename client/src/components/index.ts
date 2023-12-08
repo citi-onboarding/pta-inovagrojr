@@ -1,3 +1,4 @@
 import Clients from "./card-serviços";
+import Cards from "./cards";
 
-export { Clients };
+export { Clients, Cards };

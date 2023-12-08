@@ -2,44 +2,7 @@ import styled from "styled-components";
 
 
 
-export const CardSemSubtitulo = styled.div`
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: top; 
-    align-items: center;
-    padding: 50px;
-    margin-bottom: 80px;
-    margin-top: 80px;
-    margin-left: 80px;
-    background: #81a99b;
-    width: 1120px;
-    height: 572px;
-    border-radius: 50px;
-
-    h1{
-        color: #005038;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-size: 50px;
-        margin-bottom: 30px;
-    
-        
-    }
-
-    p {
-        color: black;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        text-align: justify;
-        font-size: 30px;
-
-    }
-
-
-`
-
-export const CardComSubtitulo = styled.div`
+export const Card = styled.div`
     
     display: flex;
     flex-direction: column;
@@ -85,3 +48,5 @@ export const CardComSubtitulo = styled.div`
 
 
 `
+
+
