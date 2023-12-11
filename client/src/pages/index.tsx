@@ -1,12 +1,12 @@
 import React from "react";
-import { Clients } from "components";
+import Contato from "components/seção6";
 import TextoComLinha from "components/seção3";
+import { Clients } from "components";
 
 export default function Home() {
   return (
     <>
-      <TextoComLinha titulo="Empresas Impactadas:" />
-      <Clients/>
+      <Contato texto="Contato:" textocaixa="Solicite seu orçamento:"/>
     </>
   );
 }
