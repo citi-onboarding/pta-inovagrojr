@@ -11,6 +11,7 @@ import LogoCITi from "./Logo.png";
 import AreaIcon1 from "./Group-10.png";
 import AreaIcon2 from "./Group 11.png";
 import AreaIcon3 from "./Group 12.png";
+import PrimeiraSecaoImg from "./primeira_secao.png";
 
 export {
   colegio_integral,
@@ -26,4 +27,5 @@ export {
   AreaIcon2,
   AreaIcon3,
   LogoCITi,
+  PrimeiraSecaoImg,
 };
