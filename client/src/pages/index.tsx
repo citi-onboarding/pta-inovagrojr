@@ -1,11 +1,11 @@
 import React from "react";
-import Headere from "components/Header";
-
+import { Clients } from "components";
+import TextoComLinha from "components/seção3";
 
 export default function Home() {
   return (
     <>
-      <Headere/>
+      <TextoComLinha titulo="Empresas Impactadas:" />
     </>
   );
 }
