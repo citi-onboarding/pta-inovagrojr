@@ -11,7 +11,6 @@ export const Card = styled.div`
     padding: 50px;
     margin-bottom: 10px;
     margin-top: 80px;
-    margin-left: 80px;
     background: #81a99b;
     width: 1120px;
     height: 572px;
@@ -23,8 +22,6 @@ export const Card = styled.div`
         font-weight: 700;
         font-size: 50px;
         margin-bottom: 0px;
-    
-        
     }
 
     h2 {
@@ -43,7 +40,6 @@ export const Card = styled.div`
         font-weight: 400;
         font-size: 30px;
         text-align: justify;
-
     }
 
 
