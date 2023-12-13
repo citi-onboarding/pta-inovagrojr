@@ -1,16 +1,10 @@
 import React from "react";
-import { HomeContainer } from "./style";
-import { LogoCITi } from "../assets";
+import Contato from "components/seção6";
 
 export default function Home() {
   return (
-    <HomeContainer>
-      <img src={LogoCITi.src} alt="" />
-      <h1>Next.js Boilerplate</h1>
-      <p>
-        Made with <strong>&lt; &#x0002F; &gt;</strong> and{" "}
-        <strong>&hearts;</strong> by CITi
-      </p>
-    </HomeContainer>
+    <>
+      <Contato texto="Contato:" textocaixa="Solicite seu orçamento:"/>
+    </>
   );
 }
