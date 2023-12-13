@@ -6,7 +6,9 @@ import PrimeiraSecao from "./primeira-secao";
 import SegundaSecao from "./segunda-secao";
 import Section4 from "./section4";
 import Section5 from "./section5";
+import Contato from "./seção6";
 import TextoComLinha from "./seção3";
 
 
-export { Clients, Cards, CardOccupationArea, CardVerdinho, PrimeiraSecao, SegundaSecao, Section4, Section5, TextoComLinha };
+export { Clients, Cards, CardOccupationArea, CardVerdinho, PrimeiraSecao, SegundaSecao, Section4, Section5, TextoComLinha, Contato };
+
