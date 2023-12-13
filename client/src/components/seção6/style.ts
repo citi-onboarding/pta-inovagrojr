@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+
+
+
+
 export const Contat = styled.div`
     
     display: flex;
@@ -8,12 +12,13 @@ export const Contat = styled.div`
     width: 100%;
     height: 100%;
     margin-top: 50px;
-    
+    background-color: #FFF;
 
     a{
         width: 290px;
         height: 5px;
         background-color: #005038;
+        border-bottom: 50px;
     }
 
 
@@ -27,14 +32,23 @@ export const Contat = styled.div`
         font-weight: 700;
         line-height: normal;
     }
+
+    b{
+        width: 956px;
+        height: 1px;
+        background: #FFF;
+        margin-bottom: 64px;
+    }
 `
 
 export const Caixa = styled.div`
     
     width: 100%;
     height: 100%;
-    display: flex;  
-    justify-content: center;
+    display: flex;
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
 
     a{
         width: 1120px;
@@ -68,6 +82,10 @@ export const Caixa = styled.div`
         background-color: #005038;
         border: none;
         width: 956px;  
+    }
+
+    input:focus{
+        outline: 2px solid #FFF;
     }
 
     b{

@@ -13,6 +13,7 @@ export default function Contato({texto, textocaixa}: Propis) {
     return (
         <>
             <Contat>
+                <b></b>
                 <a></a>
                 <p>{texto}</p>
             </Contat>
@@ -32,6 +33,7 @@ export default function Contato({texto, textocaixa}: Propis) {
                         <button>Enviar</button>
                     </span>
                 </a>
+                <b></b>
 
             </Caixa>
         </>
