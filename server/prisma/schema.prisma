@@ -22,3 +22,11 @@ model Test {
   name String
   age  Int
 }
+
+
+model CulturaOrganizacional {
+  id     Int    @id @default(autoincrement())
+  mission String
+  vision  String
+  values  String
+}
