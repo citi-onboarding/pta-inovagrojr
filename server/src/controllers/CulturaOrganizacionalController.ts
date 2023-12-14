@@ -1,28 +1,29 @@
-import { Request, Response } from "express";
+import { Request, Response, response } from "express";
 import { Citi, Crud } from "../global";
 
-class UserController implements Crud {
-  constructor(private readonly citi = new Citi("User")) {}
+class CulturaOrganizacionalController implements Crud {
+  constructor(private readonly citi = new Citi("CulturaOrganizacional")) {}
 
   create = async (request: Request, response: Response) => {
-    const { firstName, lastName, age } = request.body;
+    const { mission, vision, values } = request.body;
 
     const isAnyUndefined = this.citi.areValuesUndefined(
-      firstName,
-      lastName,
-      age
+      mission,
+      vision,
+      values
     );
+
     if (isAnyUndefined) return response.status(400).send();
 
-    const newUser = { firstName, lastName, age };
-    const { httpStatus, message } = await this.citi.insertIntoDatabase(newUser);
-
+    const newCulturaOrganizacional = { mission, vision, values };
+    const { httpStatus, message } = await this.citi.insertIntoDatabase(
+      newCulturaOrganizacional
+    );
     return response.status(httpStatus).send({ message });
   };
 
   get = async (request: Request, response: Response) => {
     const { httpStatus, values } = await this.citi.getAll();
-
     return response.status(httpStatus).send(values);
   };
 
@@ -36,10 +37,9 @@ class UserController implements Crud {
 
   update = async (request: Request, response: Response) => {
     const { id } = request.params;
-    const { firstName, lastName, age } = request.body;
+    const { mission, vision, values } = request.body;
 
-    const updatedValues = { firstName, lastName, age };
-
+    const updatedValues = { mission, vision, values };
     const { httpStatus, messageFromUpdate } = await this.citi.updateValue(
       id,
       updatedValues
@@ -49,4 +49,4 @@ class UserController implements Crud {
   };
 }
 
-export default new UserController();
+export default new CulturaOrganizacionalController();
