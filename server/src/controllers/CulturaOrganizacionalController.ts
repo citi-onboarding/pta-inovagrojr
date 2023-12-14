@@ -3,7 +3,8 @@ import { Citi, Crud } from "../global";
 
 class CulturaOrganizacionalController implements Crud {
   constructor(private readonly citi = new Citi("CulturaOrganizacional")) {}
-  CreateCulturaOrg = async (request: Request, response: Response) => {
+
+  create = async (request: Request, response: Response) => {
     const { mission, vision, values } = request.body;
 
     const isAnyUndefined = this.citi.areValuesUndefined(
@@ -18,11 +19,33 @@ class CulturaOrganizacionalController implements Crud {
     const { httpStatus, message } = await this.citi.insertIntoDatabase(
       newCulturaOrganizacional
     );
-    return response.status(httpStatus).send(message);
+    return response.status(httpStatus).send({ message });
   };
+
   get = async (request: Request, response: Response) => {
     const { httpStatus, values } = await this.citi.getAll();
     return response.status(httpStatus).send(values);
+  };
+
+  delete = async (request: Request, response: Response) => {
+    const { id } = request.params;
+
+    const { httpStatus, messageFromDelete } = await this.citi.deleteValue(id);
+
+    return response.status(httpStatus).send({ messageFromDelete });
+  };
+
+  update = async (request: Request, response: Response) => {
+    const { id } = request.params;
+    const { mission, vision, values } = request.body;
+
+    const updatedValues = { mission, vision, values };
+    const { httpStatus, messageFromUpdate } = await this.citi.updateValue(
+      id,
+      updatedValues
+    );
+
+    return response.status(httpStatus).send({ messageFromUpdate });
   };
 }
 

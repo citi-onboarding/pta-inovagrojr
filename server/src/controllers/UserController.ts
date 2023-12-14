@@ -3,6 +3,7 @@ import { Citi, Crud } from "../global";
 
 class UserController implements Crud {
   constructor(private readonly citi = new Citi("User")) {}
+
   create = async (request: Request, response: Response) => {
     const { firstName, lastName, age } = request.body;
 
