@@ -12,6 +12,12 @@ import AreaIcon1 from "./Group-10.png";
 import AreaIcon2 from "./Group 11.png";
 import AreaIcon3 from "./Group 12.png";
 import PrimeiraSecaoImg from "./primeira_secao.png";
+import LogoInovAgro from "./INOVAGRO-LOGO.png"
+import IconeInsta from "./ícone instagram.png"
+import IconeEmail from "./icone email.png"
+import IconeFacebook from "./icone facebook.png"
+import IconeLinkedin from "./icone linkedin.png"
+import WhiteCiti from "./white-citi.png"
 import LogoInovagroJr from "./Inovagro.png"
 
 export {
@@ -29,5 +35,11 @@ export {
   AreaIcon3,
   LogoCITi,
   PrimeiraSecaoImg,
+  LogoInovAgro,
+  IconeInsta,
+  IconeEmail,
+  IconeFacebook,
+  IconeLinkedin,
+  WhiteCiti,
   LogoInovagroJr,
 };

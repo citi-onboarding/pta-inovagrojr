@@ -8,8 +8,8 @@ import Section4 from "./section4";
 import Section5 from "./section5";
 import Contato from "./seção6";
 import TextoComLinha from "./seção3";
+import Footer from "./footer";
 import Headere from "./Header";
 
-
-export { Clients, Cards, CardOccupationArea, CardVerdinho, PrimeiraSecao, SegundaSecao, Section4, Section5, TextoComLinha, Contato, Headere };
+export { Clients, Cards, CardOccupationArea, CardVerdinho, PrimeiraSecao, SegundaSecao, Section4, Section5, TextoComLinha, Contato, Footer, Headere };
 
