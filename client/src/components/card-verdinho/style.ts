@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "@fontsource/montserrat";
 
 export const Container = styled.div`
   width: 26rem;

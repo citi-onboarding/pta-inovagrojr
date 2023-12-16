@@ -18,6 +18,7 @@ import IconeEmail from "./icone email.png"
 import IconeFacebook from "./icone facebook.png"
 import IconeLinkedin from "./icone linkedin.png"
 import WhiteCiti from "./white-citi.png"
+import LogoInovagroJr from "./Inovagro.png"
 
 export {
   colegio_integral,
@@ -40,4 +41,5 @@ export {
   IconeFacebook,
   IconeLinkedin,
   WhiteCiti,
+  LogoInovagroJr,
 };

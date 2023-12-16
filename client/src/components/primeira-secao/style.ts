@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "@fontsource/montserrat";
 
 export const MainContainer = styled.div`
   display: flex;
