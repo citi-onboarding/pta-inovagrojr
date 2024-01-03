@@ -9,8 +9,8 @@ export const Head = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: 0.5px solid #005038;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    //border: 0.5px solid #005038;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
     list-style-type: none;
 
 
