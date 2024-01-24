@@ -6,7 +6,7 @@ import Carrossel from "./slider";
 
 export default function Section5() {
   return (
-    <Section5Div>
+    <Section5Div id="serv">
         <hr></hr>
         <Section5H2>Descrição de cada serviço:</Section5H2>
         <Carrossel/>

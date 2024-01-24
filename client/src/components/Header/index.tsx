@@ -8,10 +8,12 @@ export default function Headere(){
         <>
             <Head>
                 <img src={LogoInovagroJr.src} alt="/"></img>
-                <a>Início</a>
-                <a>Quem somos</a>
-                <a>Serviços</a>
-                <button><p>Contato</p></button>
+                <a href="#inicio">Início</a>
+                <a href="#quem-somos">Quem somos</a>
+                <a href="#serv">Serviços</a>
+                <a href="#cont">
+                    <button><p>Contato</p></button>
+                </a>
             </Head>
         </>
     )

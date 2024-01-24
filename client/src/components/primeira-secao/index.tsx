@@ -18,7 +18,7 @@ type Props = {
 export default function PrimeiraSecao({ title, children, img, alt }: Props) {
   return (
     <>
-      <MainContainer>
+      <MainContainer id="inicio">
         <div>
           <GreenLine></GreenLine>
           <Title>{title}</Title>

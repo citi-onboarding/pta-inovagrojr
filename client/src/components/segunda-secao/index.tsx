@@ -18,7 +18,7 @@ type Props = {
 
 export default function SegundaSecao({ title, title2, children }: Props) {
   return (
-    <MainContainer>
+    <MainContainer id="quem-somos">
       <LeftContainer>
         <TitleSegundaSecao>{title}</TitleSegundaSecao>
         <TitleSegundaSecao2>{title2}</TitleSegundaSecao2>

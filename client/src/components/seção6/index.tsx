@@ -11,7 +11,7 @@ type Propis = {
 
 export default function Contato({texto, textocaixa}: Propis) {
     return (
-        <>
+        <div id="cont">
             <Contat>
                 <b></b>
                 <a></a>
@@ -36,6 +36,6 @@ export default function Contato({texto, textocaixa}: Propis) {
                 <b></b>
 
             </Caixa>
-        </>
+        </div>
     )
 }

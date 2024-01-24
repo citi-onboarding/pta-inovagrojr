@@ -29,6 +29,7 @@ export const Head = styled.div`
         font-weight: 400;
         line-height: normal;
         white-space: nowrap;
+        text-decoration: none;
 
     }
 

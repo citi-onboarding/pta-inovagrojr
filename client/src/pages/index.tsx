@@ -1,5 +1,5 @@
 import React from "react";
-import { Headere, PrimeiraSecao, SegundaSecao, TextoComLinha, Section4, Section5, Contato } from "components";
+import { Headere, PrimeiraSecao, SegundaSecao, TextoComLinha, Section4, Section5, Contato, Footer} from "components";
 import { PrimeiraSecaoImg } from "assets";
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
       <Contato
        texto="Contato:"
        textocaixa="Solicite seu orçamento:"/>
+       <Footer/>
     </div>
   );
 }
