@@ -36,7 +36,7 @@
   },
   "include": [
     "src/**/*"
-  ],
+, "../client/src/pages/api", "../client/src/services/api.ts"  ],
   "exclude": [
     "tests"
   ]
