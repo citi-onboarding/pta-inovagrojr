@@ -6,12 +6,17 @@ dotenv.config();
 const sendMail = {
     async send(req: Request, res: Response) {
         try {
-            const { destination, subject } = req.body;
+            const { name, phone, service, demand } = req.body;
         
             await mailServer({
-                destination,
-                subject: "Teste",
-                html: `<h1>Teste: Ola ${destination}, ${subject} /h1>`,	
+                destination: 'victoria.queiroz@citi.org.br',
+                subject: "Novo contato do site",
+                html: `
+                <p>Nome: ${name}</p>
+                <p>Telefone: ${phone}</p>
+                <p>Serviço: ${service}</p>
+                <p>Demanda: ${demand}</p>
+                `,	
             });
             return res.status(200).json({ message: "Email sent" });
             
