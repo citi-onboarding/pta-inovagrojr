@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 
-
-
-
 export const Contat = styled.div`
     
     display: flex;

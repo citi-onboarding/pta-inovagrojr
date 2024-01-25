@@ -2,7 +2,6 @@ import React from "react";
 import { Contat } from "./style";
 import { Caixa } from "./style";
 import { useState } from "react";
-import axios from "axios";
 import api from "services/api";
 
 type Propis = {
@@ -26,22 +25,28 @@ export default function Contato({texto, textocaixa}: Propis) {
         }));
     };
 
+    //this isnt workinggggg
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            console.log('Enviando email', formData);
-            //const response = await api.post('/email', formData);
-           // console.log('Email enviado', response.data.message); 
-            setFormData({
+           const response = await api.post('/email', formData, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
+                }
+           }); // this line is not working
+           console.log('Email enviado', response.data.message); 
+            /* setFormData({
                 name: '',
                 phone: '',
                 service: '',
                 demand: '',
-              });
+              }); */
         } catch (error) {
             console.error("Erro ao enviar email", error);
         }
     };
+
 
     return (
         <div id="cont">
