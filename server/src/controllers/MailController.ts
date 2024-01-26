@@ -9,7 +9,7 @@ const sendMail = {
             const { name, phone, service, demand } = req.body;
         
             await mailServer({
-                destination: 'victoria.queiroz@citi.org.br',
+                destination: 'inovagrojr.ufrpe@gmail.com',
                 subject: "Novo contato do site",
                 html: `
                 <p>Nome: ${name}</p>
