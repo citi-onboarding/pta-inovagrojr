@@ -36,12 +36,13 @@ export default function Contato({texto, textocaixa}: Propis) {
                 }
            }); // this line is not working
            console.log('Email enviado', response.data.message); 
-            /* setFormData({
+           alert('Email enviado com sucesso!');
+            setFormData({
                 name: '',
                 phone: '',
                 service: '',
                 demand: '',
-              }); */
+              });
         } catch (error) {
             console.error("Erro ao enviar email", error);
         }
